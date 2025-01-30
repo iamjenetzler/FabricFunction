@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "myOutputBlob",
+      "type": "blob",
+      "path": "powerbirawdata/{trigger}",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    },
+    {
+      "name": "Timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    }    
+  ]
+}
